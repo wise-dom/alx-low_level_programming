@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 /*
  * A program that prints _putchar
@@ -12,8 +12,8 @@ int main(void)
 	int i;
 
 	for (i = 0; i  < 9; i++)
-		_putchar(content[i]);
-	_putchar('\n');
+		putchar(content[i]);
+	putchar('\n');
 
 	return (0);
 }
