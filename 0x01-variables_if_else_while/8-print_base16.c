@@ -1,26 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *8-print_base16.c
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-        int digit = 0;
-        char alphabetLowercase = 'a';
+	int d;
+	char low;
 
-	while(digit<= 9)
-        {
-                putchar(digit);
-                digit++;
-        }
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+	for (low = 'a'; low <= 'f'; low++)
+		putchar(low);
+	putchar('\n');
 
-        while(alphabetLowercase <= 'f')
-        {
-                putchar(alphabetLowercase);
-                alphabetLowercase++;
-        }
-       
-        putchar('\n');
-        return (0);
+	return (0);
 }

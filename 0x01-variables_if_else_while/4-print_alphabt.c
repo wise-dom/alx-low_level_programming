@@ -1,20 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *2-print_alphabet.c
- * */
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-        char alphabet = 'a';
+	char low, e, q;
 
-        while((alphabet <= 'z') && (alphabet != 'e' || alphabet != 'q'))
-        {
+	e = 'e';
+	q = 'q';
 
-                putchar(alphabet);
-                alphabet++;
-        }
+	for (low = 'a'; low <= 'z'; low++)
+	{
+		if (low != e && low != q)
+			putchar(low);
+	}
+	putchar('\n');
 
-        putchar('\n');
-        return (0);
+	return (0);
 }

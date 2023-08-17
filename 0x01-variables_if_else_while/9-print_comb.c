@@ -1,16 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *9-print_comb.c
- * */
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	int digit = 0;
-	while(digit <= 9)
+	int d;
+
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(digit,', ');
-		digit++;
+		putchar(d);
+		if (d != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
+	putchar('\n');
+
 	return (0);
 }

@@ -1,26 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *3-print_alphabets.c
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alphabetUppercase = 'A';
-	char alphabetLowercase = 'a';
+	char low;
 
-	while(alphabetLowercase <= 'z')
-	{
-		putchar(alphabetLowercase);
-		alphabetLowercase++;
-	}
-
-	while(alphabetUppercase <= 'Z')
-        {       
-                putchar(alphabetUppercase);
-                alphabetUppercase++;
-        }
-
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+	for (low = 'A'; low <= 'Z'; low++)
+		putchar(low);
 	putchar('\n');
+
 	return (0);
 }

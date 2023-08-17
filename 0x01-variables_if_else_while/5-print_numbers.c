@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *5-print_numbers.c
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int digit = 0;
+	int i;
 
-	while(digit<=10)
-	{
-		printf(digit);
-		digit++;
-	}
-	printf('\n');
+	for (i = 0; i < 10; i++)
+		printf("%d", i);
+	printf("\n");
+
 	return (0);
 }

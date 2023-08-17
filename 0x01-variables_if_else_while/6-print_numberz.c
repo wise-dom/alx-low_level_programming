@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *6-print_numberz.c
- * */
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-        int digit = 0;
+	int d;
 
-        while(digit<=10)
-        {
+	for (d = '0'; d <= '9'; d++)
+		putchar(d);
+	putchar('\n');
 
-                putchar(digit);
-                digit++;
-        }
-
-        putchar('\n');
-        return (0);
+	return (0);
 }

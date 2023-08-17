@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *7-print_tebahpla.c
- * */
+#include <time.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-        char alphabet = 'z';
+	char low;
 
-        while(alphabet >= 'a')
-        {
+	for (low = 'z'; low >= 'a'; low--)
+		putchar(low);
+		putchar('\n');
 
-                putchar(alphabet);
-                alphabet--:
-        }
-
-        putchar('\n');
-        return (0);
+	return (0);
 }
