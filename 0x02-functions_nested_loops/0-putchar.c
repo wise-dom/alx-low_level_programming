@@ -1,5 +1,6 @@
 #include <stdio.h>
-//#include "main.h"
+/*#include "main.h"
+*/
 /*
  * A program that prints _putchar
  *
