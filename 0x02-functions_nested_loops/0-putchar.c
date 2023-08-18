@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /*
- * A program that prints _putchar
+ *Write a program that prints _putchar, followed by a new line.
  *
- * Return 0 for success
+ * The program should return 0
  */
 
 int main(void)
