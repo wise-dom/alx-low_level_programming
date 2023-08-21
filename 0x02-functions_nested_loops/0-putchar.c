@@ -1,20 +1,20 @@
 #include <stdio.h>
-
-/*
- *main - Check description
- *Description : prints _putchar, followed by a new line.
+#include "main.h"
+/**
+ * main - starting point
  *
- * The program should return 0
+ * Return: return 0 if successful
  */
-
 int main(void)
 {
-	char content[8] = "_putchar";
-	int i;
-
-	for (i = 0; i  < 8; i++)
-		putchar(content[i]);
-	putchar('\n');
-
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
