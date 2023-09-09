@@ -1,5 +1,5 @@
-#ifndef _main_h_
-#define _main_h_
+#ifndef FILE_HOLBERTON
+#define FILE_HOLBERTON
 
 void _puts_recursion(char *s);
 
