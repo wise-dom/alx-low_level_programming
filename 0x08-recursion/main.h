@@ -1,6 +1,7 @@
-#ifndef FILE_HOLBERTON
-#define FILE_HOLBERTON
+#ifndef __MAIN__H__
+#define __MAIN__H__
 
-void _puts_recursion(char *s);
+_puts_recursion(char *s);
+_print_rev_recursion(char *s);
 
 #endif
